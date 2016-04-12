@@ -1,0 +1,22 @@
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+
+
+<h1> About Me</h1>
+<p>Lots of interesting island activities.</p>
+<p>My favorite activity is riding a <%= @color %> jet ski.</p>
+<% end %>
+
+<p>
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger" %>
+</p>
+<p>
+<%= link_to "Yellow", about_path(color: "yellow"), class: "btn btn-warning" %>
+</p>
+<p>
+<%= link_to "Green", about_path(color: "green"), class: "btn btn-success" %>
+</p>

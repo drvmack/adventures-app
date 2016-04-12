@@ -1,0 +1,16 @@
+<hi> Welcome to My Travel Site </hi>
+<p> This is my very awesome travel site. </p>
+<p><%= @travel %></p>
+
+<ol>
+<% @activities.each do |activity| %>
+	<li><%= activity %></li>
+<% end %>
+</ol>
+
+
+
+<!--Passing Images Names & Alts through Hash -->
+<% @image_hash.each do |key, value| %>
+<p><%= image_tag value, alt: key, class: "img-responsive" %></p>
+<% end %>
