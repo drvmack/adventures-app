@@ -1,11 +1,11 @@
 class WelcomeController < ApplicationController
   def index
-    @travel = "Island_Getaway"
+    @travel = "Island Getaway"
 		@activities = ["Boat Tour", "Snorkel", "Safari", "Jet Ski Tour"]
-		@images = ["boat.jpg", "snorkel.jpg", "safari.jpeg", "jet ski tour.jpg"]
+		@images = ["boat.jpg", "snorkel.jpg", "safari.jpeg", "jetski.jpg"]
 
 		@image_hash = {"Happy boat" => "boat.jpg", "Happy Snorkel" => "snorkel.jpg", 
-			"Happy Safari" => "safari.jpg", "Happy Jet Ski"=> "jet ski tour.jpg" }
+			"Happy Safari" => "safari.jpeg", "Happy Jet Ski"=> "jetski.jpg" }
 
   end
 

@@ -9,6 +9,9 @@
 </ol>
 
 
+<% @images.each do |image| %>
+<p><%= image_tag image, alt: "Happy boat", class: "img-responsive" %></p>
+<% end %>
 
 <!--Passing Images Names & Alts through Hash -->
 <% @image_hash.each do |key, value| %>
